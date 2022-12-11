@@ -2,9 +2,11 @@ name: CI
 
 on:
   push:
-    branches: [main]
-
-  workflow-dispatch:
+    branches:
+      - main
+  paths:
+    - "src/**"
+    - ".github/workflows/main.yml"
 
   jobs:
     build:
