@@ -10,17 +10,12 @@
     - v[0-9]+.[0-9]+.[0-9]+*
 
 jobs:
-  build_and_test:
-    - name: Build and test
-      runs-on: ubuntu-latest
-
-      steps:
-        - uses: actions/checkout@v2
-
-        - name: Run a one-line script
-          run: echo Hello, wWrld!
-
-        - name: Run a multi line script
-          run: |
-            echo Add other actions to build,
-            echo test, and deploy your project.
+    your_npm_job_name:
+        steps:
+          - uses: actions/checkout@v2
+          - uses: actions/setup-node@v2
+             with:
+              node-version: '12'
+              check-latest: true
+          - run: npm install
+          - run: npm check-rules
