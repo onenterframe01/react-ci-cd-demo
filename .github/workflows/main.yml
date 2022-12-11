@@ -1,4 +1,4 @@
-name: Depoy Node.js
+name: CI
 
 on:
   push:
