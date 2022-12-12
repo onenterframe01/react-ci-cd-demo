@@ -25,8 +25,8 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          - run: npm install
-          - run: npm run production
+          - run: npm i
+          - run: npm run build
             node-version: ${{ matrix.node-version }}
             cache-dependency-path: "./package.json"
       - run: npm ci
