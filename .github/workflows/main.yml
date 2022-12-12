@@ -13,16 +13,16 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - users: actions/checkout
-      - name: Login via AZURE CLI
-        uses: azure/login@v1
-        with:
-          creds: ${{secrets.AZURE_CREDENTIALS}}
+      # - users: actions/checkout
+      # - name: Login via AZURE CLI
+      #   uses: azure/login@v1
+      #   with:
+      #     creds: ${{secrets.AZURE_CREDENTIALS}}
 
-      - name: Checkout source code
-        uses: actions/checkout@v2
+      # - name: Checkout source code
+      #   uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
