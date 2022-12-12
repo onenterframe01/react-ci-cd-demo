@@ -30,6 +30,7 @@ jobs:
       #      - run: "Desktop/Mission_Ready/Mission4/pipelines/package.json"
       # - run: npm i
       # - run: npm run build
-        run: npm ci
+        run: |
+              npm ci
       - run: npm run build --if-present
       - run: npm test
