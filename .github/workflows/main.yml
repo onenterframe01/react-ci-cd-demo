@@ -5,7 +5,7 @@ on:
       - main
 
 env:
-  AZURE_WEBAPP_NAME: turnersapi
+  AZURE_WEBAPP_NAME: Turnersapi
   AZURE_WEBAPP_PATH: "."
   NODE_VERSION: "18.12.1"
 
