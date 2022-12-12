@@ -4,10 +4,10 @@ on:
     branches:
       - main
 
-env:
-  AZURE_WEBAPP_NAME: turnersapi
-  AZURE_WEBAPP_PATH: "."
-  NODE_VERSION: "18.12.1"
+# env:
+#   AZURE_WEBAPP_NAME: turnersapi
+#   AZURE_WEBAPP_PATH: "."
+#   NODE_VERSION: "18.12.1"
 
 jobs:
   build-and-deploy:
