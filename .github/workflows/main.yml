@@ -8,7 +8,6 @@ env:
   AZURE_WEBAPP_NAME: turnersapi
   AZURE_WEBAPP_PATH: "."
   NODE_VERSION: "18.12.1"
-  CI = false
 
 jobs:
   build-and-deploy:
@@ -27,7 +26,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache-dependency-path: "./pipelines/package.json"
+          cache-dependency-path: "/pipelines/package.json"
       - run: npm i
       - run: npm run build
       - run: npm ci
