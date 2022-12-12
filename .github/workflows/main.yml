@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache-dependency-path: "/pipelines/package.json"
-      - run: "/Users/daniellevine/Desktop/Mission_Ready/Mission4/pipelines/package.json"
+      - run: "/daniellevine/Desktop/Mission_Ready/Mission4/pipelines/package.json"
       - run: npm i
       - run: npm run build
       - run: npm ci
