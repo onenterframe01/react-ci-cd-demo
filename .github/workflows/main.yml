@@ -8,6 +8,7 @@ env:
   AZURE_WEBAPP_NAME: turnersapi
   AZURE_WEBAPP_PATH: "."
   NODE_VERSION: "18.12.1"
+  CI = false
 
 jobs:
   build-and-deploy:
