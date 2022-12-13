@@ -1,4 +1,4 @@
-const request = require("supertest")("localhost:4000");
+const request = require("supertest");
 const assert = require("assert");
 
 //Testing API endpoints
