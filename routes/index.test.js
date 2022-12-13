@@ -3,16 +3,16 @@ const assert = require("assert");
 
 //Testing API endpoints
 describe("testing api endpoints '/' ", () => {
-  // it(" GET / knock knock... ", async () => {
-  //   //endpoint
-  //   return request
-  //     .get("/")
-  //     .send("whos there?")
-  //     .then((response) => {
-  //       assert.strict(response.status, 200);
-  //     });
-  // });
-  it(" POST / should return car value based on formula specified in brief", async () => {
+  it(" GET /  ", async () => {
+    //endpoint
+    return request
+      .get("/")
+      .send("Hello")
+      .then((response) => {
+        assert.strict(response.status, 200);
+      });
+  });
+  it(" POST / value returned based on formula in brief", async () => {
     //endpoint
     const model = "Civic";
     const year = 2014;
