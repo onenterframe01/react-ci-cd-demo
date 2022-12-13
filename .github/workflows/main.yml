@@ -22,11 +22,11 @@ jobs:
 
       - name: Checkout source code
         uses: actions/checkout@v2
-      # uses: actions/checkoutnode@v2
+      # uses: actions/checkout-node@v2
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v1
         with:
-          node-version: 18
+          node-version: [18.x, 16.x, 14.x]
       - name: Install Dependancies
         #      - run: "Desktop/Mission_Ready/Mission4/pipelines/package.json"
         # - run: npm i
