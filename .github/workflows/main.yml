@@ -22,7 +22,7 @@ jobs:
 
       - name: Checkout source code
         uses: actions/checkout@v2
-      # uses: actions/checkout-node@v2
+      # uses: actions/checkoutnode@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
