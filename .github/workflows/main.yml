@@ -4,11 +4,11 @@ on:
     branches:
       - main
 
-env:
-  AZURE_WEBAPP_NAME: Turnersapi
-  AZURE_WEBAPP_PATH: "."
-  NODE_VERSION: "18.12.1"
-  CI: true
+# env:
+#   AZURE_WEBAPP_NAME: Turnersapi
+#   AZURE_WEBAPP_PATH: "."
+#   NODE_VERSION: "18.12.1"
+#   CI: true
 
 jobs:
   build-and-deploy:
@@ -34,4 +34,6 @@ jobs:
         run: |
           npm ci
       - run: npm run build --if-present
-      - run: CI=true npm test
+      - run: npm run test
+        env:
+          CI: true;
