@@ -26,7 +26,8 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          #  node-version: ${{ matrix.node-version }}
+          node-version: [10.x, 12.x, 14.x, 15.x]
       - name: Install Dependancies
         #      - run: "Desktop/Mission_Ready/Mission4/pipelines/package.json"
         # - run: npm i
