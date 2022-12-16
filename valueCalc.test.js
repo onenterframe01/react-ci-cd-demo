@@ -1,5 +1,6 @@
 /*Describe all the test cases - testfunctionality spec */
 const suggestedValueCalc = require("./valueCalc");
+const request = require("request");
 
 //Expected Output for the testd
 //Describe is used to describe a test case
