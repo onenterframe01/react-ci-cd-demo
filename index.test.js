@@ -20,7 +20,7 @@ describe("testing api endpoints '/' ", () => {
     const input = { model, year };
 
     return request
-      .post("/suggested-value")
+      .post("http://")
       .send(input)
       .then((response) => {
         assert.strict(response.status, 200);
