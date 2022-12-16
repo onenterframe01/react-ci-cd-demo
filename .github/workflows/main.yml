@@ -17,9 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up Node.js version
-          uses: actions/setup-node@v3
-          with:
-            node-version "16.x"
+        uses: actions/setup-node@v3
+        with: node-version "16.x"
       #     creds: ${{secrets.AZURE_CREDENTIALS}}
 
       - name: npm install, build, and test
@@ -49,5 +48,5 @@ jobs:
         with:
           app-name: "NicholasM5"
           slot-name: "Production"
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E53EFBE23AD04BFABE1F5EE5480D3B94 }}
+          publish-profile: ${{secrets.AZURE_CREDENTIALS}}
           package: .
