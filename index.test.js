@@ -7,7 +7,7 @@ describe("testing api endpoints '/' ", () => {
   it(" GET / knock knock..  ", async () => {
     //endpoint
     return request
-      .get("/")
+      .get("http://")
       .send("Hello")
       .then((response) => {
         assert.strict(response.status, 200);
