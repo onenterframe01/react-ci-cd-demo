@@ -3,7 +3,7 @@ const assert = require("assert");
 const request = require("request");
 
 //Testing API endpoints
-describe("testing api endpoints '/' ", () => {
+describe("testing api endpoints ", () => {
   it(" GET / knock knock..  ", async () => {
     //endpoint
     return request
