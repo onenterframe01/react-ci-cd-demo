@@ -1,5 +1,6 @@
 const request = require("supertest");
 const assert = require("assert");
+const request = require("request");
 
 //Testing API endpoints
 describe("testing api endpoints '/' ", () => {
