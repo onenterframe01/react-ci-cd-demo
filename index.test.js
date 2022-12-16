@@ -3,7 +3,7 @@ const assert = require("assert");
 
 //Testing API endpoints
 describe("testing api endpoints '/' ", () => {
-  it(" GET /  ", async () => {
+  it(" GET / knock knock..  ", async () => {
     //endpoint
     return request
       .get("/")
@@ -19,7 +19,7 @@ describe("testing api endpoints '/' ", () => {
     const input = { model, year };
 
     return request
-      .post("/suggested value")
+      .post("/suggested-value")
       .send(input)
       .then((response) => {
         assert.strict(response.status, 200);

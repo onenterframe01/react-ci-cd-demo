@@ -20,7 +20,7 @@ server.get("/", (req, res) => {
 
 server.post("/suggested-value/", suggestedValue);
 
-const PORT = 4000;
-server.listen(PORT, () => {
-  console.log("listening to port", PORT);
-});
+// const PORT = 4000;
+// server.listen(PORT, () => {
+//   console.log("listening to port", PORT);
+// });
