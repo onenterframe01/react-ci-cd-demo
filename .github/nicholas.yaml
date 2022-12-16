@@ -1,27 +1,18 @@
-name: Build and deploy Node.js app to Azure Web App - DanielM5
+name: Build and deploy Node.js app to Azure Web App - NicholasM5
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
-
-# env:
-#   AZURE_WEBAPP_NAME: Turnersapi
-#   AZURE_WEBAPP_PATH: "."
-#   NODE_VERSION: "18.12.1"
-#   CI: true
-
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
       - name: Set up Node.js version
-          uses: actions/setup-node@v3
-          with:
-            node-version "16.x"
-      #     creds: ${{secrets.AZURE_CREDENTIALS}}
-
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
       - name: npm install, build, and test
         run: |
           npm install
