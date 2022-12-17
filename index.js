@@ -14,11 +14,11 @@ const suggestedValue = (req, res) => {
   res.json({ car_value: value });
 };
 
-server.get("https://", (req, res) => {
+server.get("/", (req, res) => {
   res.send("Welcome to Turners API!");
 });
 
-server.post("https://", suggestedValue);
+server.post("/", suggestedValue);
 
 // const PORT = 4000;
 // server.listen(PORT, () => {
