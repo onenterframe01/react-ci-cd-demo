@@ -56,9 +56,5 @@ jobs:
         with:
           app-name: "turnersapi"
           slot-name: "production"
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          enable-AzPSSession: true
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_d14ad05e754b48a8a934ef7219cff9d7 }}
           package: .
