@@ -14,7 +14,7 @@ describe("testing api endpoints ", () => {
       });
   });
   it(" POST / value returned based on formula in brief", async () => {
-    //endpoint
+    //endpoiint
     const model = "Civic";
     const year = 2014;
     const input = { model, year };
