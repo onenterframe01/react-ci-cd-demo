@@ -21,7 +21,7 @@
     "jest": "^29.3.1",
     "supertest": "^6.3.3"
   },
-  "assets": {
+  "assets": [
     "web.config"
-  }
+]
 }
