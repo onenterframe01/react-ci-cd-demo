@@ -14,7 +14,7 @@ const suggestedValue = (req, res) => {
   res.json({ car_value: value });
 };
 
-server.get("/", (req, res) => {
+server.get("/suggested-value", (req, res) => {
   res.send("Welcome to Turners API!");
 });
 
