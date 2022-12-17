@@ -7,7 +7,7 @@ describe("testing api endpoints ", () => {
   it(" GET / knock knock..  ", async () => {
     //endpoint
     return request
-      .get("/suggested-value")
+      .get("https://turnersapi.azurewebsites.net/")
       .send("Hello")
       .then((response) => {
         assert.strict(response.status, 200);
@@ -20,7 +20,7 @@ describe("testing api endpoints ", () => {
     const input = { model, year };
 
     return request
-      .post("/suggested-value")
+      .post("https://turnersapi.azurewebsites.net/")
       .send(input)
       .then((response) => {
         assert.strict(response.status, 200);
