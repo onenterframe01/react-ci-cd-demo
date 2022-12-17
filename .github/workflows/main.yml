@@ -55,8 +55,10 @@ jobs:
 
       - name: "Deploy to Azure Web App"
         id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
+        uses: azure/login@v1
         with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          allow-no-subscriptions: true
           app-name: "turnersapi"
           slot-name: "production"
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_d14ad05e754b48a8a934ef7219cff9d7 }}
