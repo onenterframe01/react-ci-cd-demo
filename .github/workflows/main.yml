@@ -56,8 +56,6 @@ jobs:
       - uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-        with:
           app-name: "turnersapi"
           slot-name: "production"
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_d14ad05e754b48a8a934ef7219cff9d7 }}
