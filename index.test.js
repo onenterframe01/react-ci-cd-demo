@@ -7,7 +7,7 @@ describe("testing api endpoints ", () => {
   it(" GET / knock knock..  ", async () => {
     //endpoint
     return request
-      .get("https://")
+      .get("/suggested-value")
       .send("Hello!")
       .then((response) => {
         assert.strict(response.status, 200);
@@ -20,7 +20,7 @@ describe("testing api endpoints ", () => {
     const input = { model, year };
 
     return request
-      .post("https://")
+      .post("/suggested-value")
       .send(input)
       .then((response) => {
         assert.strict(response.status, 200);

@@ -18,7 +18,7 @@ server.get("/", (req, res) => {
   res.send("Welcome to Turners API!");
 });
 
-server.post("/", suggestedValue);
+server.post("/suggested-value", suggestedValue);
 
 // const PORT = 4000;
 // server.listen(PORT, () => {
